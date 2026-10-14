@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Permite que la aplicación se adapte correctamente a dispositivos móviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gestor Escolar</title>
+    <!-- Manifest -->
+    <link rel="manifest" href="./manifest.json">
+    <!-- Hoja de estilos principal -->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+
+    <!--
+        Contenedor principal de la aplicación.
+
+        Las diferentes vistas serán cargadas dentro de este elemento
+        mediante JavaScript.
+    -->
+    <main id="app"></main>
+
+    <!--
+        Punto de entrada de JavaScript.
+
+        "type=module" nos permite utilizar import/export
+        entre nuestros archivos JavaScript.
+    -->
+    <!--Cargamos el CDN de brypt para realizar el hash del password-->
+    <script src="https://cdn.jsdelivr.net/npm/bcryptjs@2.4.3/dist/bcrypt.min.js"></script>
+    <script type="module" src="./src/app.js"></script>
+
+</body>
+
+</html>
